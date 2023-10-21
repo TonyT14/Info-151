@@ -343,11 +343,13 @@ body {
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
+  color: var(--white);
 }
 
 p {
   margin: 0;
   padding: 0;
+  color: var(--white);
 }
 
 ul {
@@ -358,6 +360,17 @@ ul {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
+.blue-btn {
+  background-color: var(--light-blue);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
 /* =============
     Forms
 ============= */
@@ -384,9 +397,16 @@ textarea {
 /* =============
     Header
 ============= */
+header nav ul li a {
+  color: var(--white);
+}
+
 /* =============
     Footer
 ============= */
 /* =============
     Hero
 ============= */
+#hero {
+  margin-top: 78px;
+}

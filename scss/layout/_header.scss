@@ -1,3 +1,14 @@
 /* =============
     Header
 ============= */
+header{
+    nav{
+        ul{
+            li{
+               a{
+                color: var(--white);
+               }
+            }
+        }
+    }
+}
