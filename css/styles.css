@@ -332,9 +332,13 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--white);
+}
+
 section {
   margin: 90px;
-  padding: 50px;
+  padding: 10px 50px;
   border: gray 2px solid;
   border-radius: 10px;
   display: inline-block;
@@ -347,12 +351,14 @@ section {
 /* =============
     Typography
 ============= */
-header {
+h1, h2, p {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
 }
 
-h2 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+h3 {
+  text-align: center;
+  font-size: 35px;
 }
 
 /* =============
@@ -391,12 +397,10 @@ textarea {
     Header
 ============= */
 header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center;
+  padding-top: 30px;
   font-size: 45px;
-}
-
-h2 {
-  text-align: center;
 }
 
 /* =============
