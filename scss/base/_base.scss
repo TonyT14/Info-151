@@ -2,4 +2,14 @@
     Base
 ============= */
 
+section{
+    margin: 90px;
+    padding: 50px;
+    border: gray 2px solid;
+    border-radius: 10px;
+    display: inline-block;
+}
 
+#middle{
+    border-color: var(--purple);
+}

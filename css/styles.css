@@ -13,6 +13,7 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --purple: #5319A6;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,12 +332,38 @@ template {
 /* =============
     Base
 ============= */
+section {
+  margin: 90px;
+  padding: 50px;
+  border: gray 2px solid;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#middle {
+  border-color: var(--purple);
+}
+
 /* =============
     Typography
 ============= */
+header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h2 {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
 /* =============
     Buttons
 ============= */
+button {
+  margin: 68px 50px 69px;
+  border-radius: 5px;
+  border-style: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -363,6 +390,15 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  text-align: center;
+  font-size: 45px;
+}
+
+h2 {
+  text-align: center;
+}
+
 /* =============
     Footer
 ============= */
