@@ -11,8 +11,9 @@ html {
     Variables
 ============= */
 :root {
-  --black: #000000;
+  --black: #051114;
   --white: #ffffff;
+  --purple: #5319A6;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,12 +332,33 @@ template {
 /* =============
     Base
 ============= */
+body {
+  background-color: var(--black);
+}
+
 /* =============
     Typography
 ============= */
+section, h1, h2, h3 {
+  color: var(--white);
+}
+
+p {
+  text-align: center;
+  color: var(--white);
+}
+
+ul {
+  margin: 10px;
+}
+
 /* =============
     Buttons
 ============= */
+button {
+  padding: 10px;
+}
+
 /* =============
     Forms
 ============= */
@@ -363,6 +385,19 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  padding: 50px;
+  margin-right: 40px;
+}
+
 /* =============
     Footer
 ============= */
+section {
+  margin: 20px;
+  padding: 60px;
+  border: gray 2px solid;
+  border-radius: 10px;
+  display: inline-block;
+  border-style: hidden;
+}
