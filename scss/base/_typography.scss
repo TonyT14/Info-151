@@ -1,3 +1,15 @@
 /* =============
     Typography
 ============= */
+section,h1,h2,h3{
+    color: var(--white);
+}
+
+p{
+    text-align: center;
+    color: var(--white);
+}
+
+ul{
+    margin: 10px;
+}
