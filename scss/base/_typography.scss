@@ -2,7 +2,7 @@
     Typography
 ============= */
 
-div,h2,,h3,a,p{
+div,h2,h3,h4,a,p{
     color: var(--white);
 }
 
@@ -11,5 +11,15 @@ h3{
 }
 
 p{
+    text-align: left;
+}
+
+h4{
     text-align: center;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }

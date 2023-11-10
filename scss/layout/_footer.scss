@@ -4,6 +4,8 @@
 
 
 footer{
+    margin: 20px;
+    padding: 40px;
     display: grid;
     grid-template-columns: auto 1440px auto;
     grid-template-areas: 
@@ -14,7 +16,7 @@ footer{
         grid-area: footer-grid-item;
 
         display: grid;
-        grid-template-columns: 40% 25% 15% auto;
+        grid-template-columns: 50% 15% 15% auto;
 
     }
 

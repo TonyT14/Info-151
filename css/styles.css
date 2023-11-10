@@ -339,7 +339,7 @@ body {
 /* =============
     Typography
 ============= */
-div, h2, h3, a, p {
+div, h2, h3, h4, a, p {
   color: var(--white);
 }
 
@@ -348,7 +348,17 @@ h3 {
 }
 
 p {
+  text-align: left;
+}
+
+h4 {
   text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* =============
@@ -396,6 +406,8 @@ a {
     Footer
 ============= */
 footer {
+  margin: 20px;
+  padding: 40px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: auto 1440px auto;
@@ -408,8 +420,8 @@ footer #footer-grid-item {
   grid-area: footer-grid-item;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 40% 25% 15% auto;
-  grid-template-columns: 40% 25% 15% auto;
+  -ms-grid-columns: 50% 15% 15% auto;
+  grid-template-columns: 50% 15% 15% auto;
 }
 footer #footer-bottom {
   -ms-grid-row: 2;
