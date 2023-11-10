@@ -1,6 +1,10 @@
 /* =============
     Buttons
 ============= */
-button{
+button {
     padding: 10px;
+  }
+
+button:hover{
+    color: var(--purple);
 }

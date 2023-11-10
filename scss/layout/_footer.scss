@@ -2,11 +2,46 @@
     Footer
 ============= */
 
-section{
+
+footer{
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas: 
+    ". footer-grid-item ."
+    ". footer-bottom .";
+
+    #footer-grid-item{
+        grid-area: footer-grid-item;
+
+        display: grid;
+        grid-template-columns: 40% 25% 15% auto;
+
+    }
+
+    #footer-bottom{
+        grid-area: footer-bottom;
+    }
+}
+
+
+
+
+/*
+footer{
     margin: 20px;
     padding: 60px;
-    border: gray 2px solid;
-    border-radius: 10px;
-    display: inline-block;
-    border-style: hidden;
 }
+
+.social-links{
+    margin: 10px;
+    padding: 50px;
+}
+
+.footer-section{
+        margin-left: auto;
+        border: gray 2px solid;
+        border-radius: 10px;
+        display: inline-block;
+        border-style: hidden;
+}
+*/

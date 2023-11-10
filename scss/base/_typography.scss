@@ -1,15 +1,15 @@
 /* =============
     Typography
 ============= */
-section,a,h1,h2,h3{
+
+div,h2,,h3,a,p{
     color: var(--white);
+}
+
+h3{
+    word-wrap: break-word;
 }
 
 p{
     text-align: center;
-    color: var(--white);
-}
-
-ul{
-    margin: 10px;
 }

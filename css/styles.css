@@ -339,17 +339,16 @@ body {
 /* =============
     Typography
 ============= */
-section, a, h1, h2, h3 {
+div, h2, h3, a, p {
   color: var(--white);
+}
+
+h3 {
+  word-wrap: break-word;
 }
 
 p {
   text-align: center;
-  color: var(--white);
-}
-
-ul {
-  margin: 10px;
 }
 
 /* =============
@@ -357,6 +356,10 @@ ul {
 ============= */
 button {
   padding: 10px;
+}
+
+button:hover {
+  color: var(--purple);
 }
 
 /* =============
@@ -382,22 +385,54 @@ textarea {
 /* =============
     Navigation
 ============= */
-/* =============
-    Header
-============= */
-header {
-  padding: 50px;
-  margin-right: 40px;
+a {
+  text-decoration: none;
 }
 
 /* =============
+    Header
+============= */
+/* =============
     Footer
 ============= */
-section {
-  margin: 20px;
-  padding: 60px;
-  border: gray 2px solid;
-  border-radius: 10px;
-  display: inline-block;
-  border-style: hidden;
+footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1440px auto;
+  grid-template-columns: auto 1440px auto;
+      grid-template-areas: ". footer-grid-item ." ". footer-bottom .";
 }
+footer #footer-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: footer-grid-item;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 25% 15% auto;
+  grid-template-columns: 40% 25% 15% auto;
+}
+footer #footer-bottom {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: footer-bottom;
+}
+
+/*
+footer{
+    margin: 20px;
+    padding: 60px;
+}
+
+.social-links{
+    margin: 10px;
+    padding: 50px;
+}
+
+.footer-section{
+        margin-left: auto;
+        border: gray 2px solid;
+        border-radius: 10px;
+        display: inline-block;
+        border-style: hidden;
+}
+*/
