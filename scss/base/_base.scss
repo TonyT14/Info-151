@@ -10,7 +10,19 @@ section{
     padding: 10px 50px;
     border: gray 2px solid;
     border-radius: 10px;
-    display: inline-block;
+    display: grid;
+    grid-template-columns: auto 1440px auto;
+    grid-template-areas:
+    ". footer-grid-item ."
+    ". footer-bottom . "
+
+    #footer-grid-item{
+        grid-area: footer-grid-item;
+        
+        display: grid;
+        grid-template-columns: 50% 15% 15% auto;
+    }
+
 }
 
 #middle{
