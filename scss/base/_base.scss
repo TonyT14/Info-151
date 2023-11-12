@@ -5,22 +5,39 @@ body{
     background-color: var(--white);
 }
 
-section{
-    margin: 40px;
-    padding: 50px 50px;
-    border: gray 2px solid;
-    border-radius: 10px;
+.wrapper{
     display: grid;
-    grid-template-columns: auto auto auto;
-    grid-template-areas:
-    ". box .";
+    place-items: center;
+    min-height: 500px;
+}
 
-    #box{
-        grid-area: box;
-        
-        display: grid;
-        grid-template-columns: 50% 15% 15% auto;
-        
-    }
+.grid-container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 100px;
+    width: 1200px;
+    height: 450px;
+}
 
+.left{
+    background-color: rgb(221, 220, 220);
+    grid-column: 1;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+.middle{
+    background-color: rgb(62, 187, 187);
+    grid-column: 2;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
+}
+
+.right{
+    background-color: rgb(221, 220, 220);
+    grid-column: 3;
+    border-radius: 10px;
+    box-shadow: 5px 10px #888888;
 }
