@@ -341,6 +341,7 @@ body {
     Typography
 ============= */
 div, h2, h3, h4, a, p {
+  font-family: "Roboto Condensed", sans-serif;
   color: var(--white);
 }
 
