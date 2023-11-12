@@ -341,18 +341,21 @@ body {
     Typography
 ============= */
 h1, h2, h3, h4, h5 {
+  font-family: "Roboto Condensed", sans-serif;
   margin: 0;
   padding: 0;
   color: var(--white);
 }
 
 p {
+  font-family: "Roboto Condensed", sans-serif;
   margin: 0;
   padding: 0;
   color: var(--white);
 }
 
 ul {
+  font-family: "Roboto Condensed", sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -360,15 +363,19 @@ ul {
 /* =============
     Buttons
 ============= */
-button {
-  border: none;
-}
-
 .blue-btn {
   background-color: var(--light-blue);
   color: var(--white);
   padding: 15px 30px;
   border-radius: 5px;
+  text-decoration: none;
+  border: none;
+}
+
+.blue-btn:hover {
+  background-color: #ccc;
+  -webkit-transition: 25ms;
+  transition: 25ms;
 }
 
 /* =============
