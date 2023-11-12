@@ -337,22 +337,24 @@ body {
 }
 
 section {
-  margin: 90px;
-  padding: 10px 50px;
+  margin: 40px;
+  padding: 50px 50px;
   border: gray 2px solid;
   border-radius: 10px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 1440px auto;
-  grid-template-columns: auto 1440px auto;
-      grid-template-areas: ". footer-grid-item ." ". footer-bottom . " #footer-grid-item;
-  grid-template-areas-grid-area: footer-grid-item;
-  grid-template-areas-display: grid;
-  grid-template-areas-grid-template-columns: 50% 15% 15% auto;
+  -ms-grid-columns: auto auto auto;
+  grid-template-columns: auto auto auto;
+      grid-template-areas: ". box .";
 }
-
-#middle {
-  border-color: var(--purple);
+section #box {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: box;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% 15% 15% auto;
+  grid-template-columns: 50% 15% 15% auto;
 }
 
 /* =============

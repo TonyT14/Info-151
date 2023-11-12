@@ -6,25 +6,21 @@ body{
 }
 
 section{
-    margin: 90px;
-    padding: 10px 50px;
+    margin: 40px;
+    padding: 50px 50px;
     border: gray 2px solid;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: auto 1440px auto;
+    grid-template-columns: auto auto auto;
     grid-template-areas:
-    ". footer-grid-item ."
-    ". footer-bottom . "
+    ". box .";
 
-    #footer-grid-item{
-        grid-area: footer-grid-item;
+    #box{
+        grid-area: box;
         
         display: grid;
         grid-template-columns: 50% 15% 15% auto;
+        
     }
 
-}
-
-#middle{
-    border-color: var(--purple);
 }
