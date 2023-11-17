@@ -2,17 +2,15 @@
     Typography
 ============= */
 
-h1,h2,h3,h4,h5{
+h1{
     font-family: 'Roboto Condensed', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-size: 80px;
     color: var(--white);
 }
 
 p{
     font-family: 'Roboto Condensed', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-size: 20px;
     color: var(--white);
 }
 

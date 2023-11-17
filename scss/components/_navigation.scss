@@ -1,3 +1,19 @@
 /* =============
     Navigation
 ============= */
+
+nav{
+        ul{
+            float: right;
+            }
+        
+            li{
+                display: inline-flex;
+                text-align: center;
+                margin: 15px;
+            }
+            
+            a{
+                color: var(--white);
+             }  
+    }

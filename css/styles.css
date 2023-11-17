@@ -340,17 +340,15 @@ body {
 /* =============
     Typography
 ============= */
-h1, h2, h3, h4, h5 {
+h1 {
   font-family: "Roboto Condensed", sans-serif;
-  margin: 0;
-  padding: 0;
+  font-size: 80px;
   color: var(--white);
 }
 
 p {
   font-family: "Roboto Condensed", sans-serif;
-  margin: 0;
-  padding: 0;
+  font-size: 20px;
   color: var(--white);
 }
 
@@ -401,11 +399,28 @@ textarea {
 /* =============
     Navigation
 ============= */
+nav ul {
+  float: right;
+}
+nav li {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  text-align: center;
+  margin: 15px;
+}
+nav a {
+  color: var(--white);
+}
+
 /* =============
     Header
 ============= */
-header nav ul li a {
-  color: var(--white);
+header {
+  margin: 10px;
+  padding: 10px;
+  display: -ms-grid;
+  display: grid;
 }
 
 /* =============
@@ -415,5 +430,9 @@ header nav ul li a {
     Hero
 ============= */
 #hero {
-  margin-top: 78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 150px;
+  padding: 100px;
 }
