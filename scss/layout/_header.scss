@@ -13,6 +13,15 @@ header{
         grid-template-columns: 70% 30%;
     }
 
+    @include xl{
+        grid-template-columns: 25% auto;
+        grid-template-areas:
+        "logo nav";
+
+        padding: 24px 48px;
+
+    }
+
     #logo-container{
         display: flex;
         align-items: center;
@@ -25,6 +34,10 @@ header{
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
+
+        @include xl{
+            display: none;
+        }
     }
 
     nav{
