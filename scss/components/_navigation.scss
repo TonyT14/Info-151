@@ -7,6 +7,18 @@ a{
 }
 
 nav{
+    // hide the nav on page load
+    display: none;
+    margin-top: 12px;
+    padding-top: 20px;
+    
+    @include xl{
+        border: none;
+        margin-top: 0;
+        padding-top: 0;
+        display: block;
+    }
+    
     ul{
         display: flex;
         flex-direction: column;

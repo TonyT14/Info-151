@@ -393,6 +393,19 @@ a {
   text-decoration: none;
 }
 
+nav {
+  display: none;
+  margin-top: 12px;
+  padding-top: 20px;
+}
+@media (min-width: 1200px) {
+  nav {
+    border: none;
+    margin-top: 0;
+    padding-top: 0;
+    display: block;
+  }
+}
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
