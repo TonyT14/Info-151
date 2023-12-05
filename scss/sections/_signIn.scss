@@ -1,20 +1,49 @@
 /* =============
     Sign In
 ============= */
-#sign-in{
-    background-color: var(--teal);
-    height: 50vh;
+#sign-in-container{
+    // background-color: var(--teal);
+    background-color: #024A58B3;
+    height: 100vh;
+    padding: 16px;
+    position: fixed;
+    width: 100%;
+    box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 16px;
+    height: 100%;
 
     form{
+        background-color: #024A58CC;
+        padding: 24px;
+        box-sizing: border-box;
+        border-radius: 8px;
+
+        #close-button-container{
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 24px;
+        }
+
         input{
             width: 100%;
             box-sizing: border-box;
             height: 60px;
             margin-bottom: 24px;
+            border: none;
+            border-radius: 8px;
+        }
+
+        #sign-in-button-container{
+            display: flex;
+            justify-content: flex-end;
+
+            button{
+                background-color: var(--lunargreen);
+                color: var(--white);
+                border: 1px solid var(--white);
+            }
         }
     }
 }

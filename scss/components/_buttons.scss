@@ -1,10 +1,46 @@
 /* =============
     Buttons
 ============= */
+
 button{
     border: none;
+    cursor: pointer;
     background-color: transparent;
-    padding: 0;
-    margin: 0;
-    cursor: pointer
+}
+
+.teal-btn{
+    padding: 15px 20px;
+    background-color: var(--teal);
+    transition: 0.25s;
+    color: var(--white);
+    border-radius: 8px;
+}
+
+.teal-btn:hover{
+    background-color: var(--gray);
+}
+
+.white-btn{
+    border: 1px solid var(--teal);
+    padding: 15px 20px;
+    background-color: var(--white);
+    transition: 0.25s;
+    color: var(--teal);
+    border-radius: 8px;
+}
+
+.white-btn:hover{
+    background-color: var(--gray);
+    color: var(--white);
+}
+
+.close-btn{
+    background-color: var(--aqua);
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
 }
