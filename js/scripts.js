@@ -4,7 +4,6 @@
 
 var mainNav = document.querySelector("#mainNav");
 var burgerBtn = document.querySelector("#burger-container button");
-
 var burgerBars = document.querySelector("#burger-bars");
 var burgerX = document.querySelector("#burger-x");
 
@@ -55,15 +54,38 @@ burgerBtn.addEventListener("click", showNav);
 
  function showSignInModal() {
     // console.log("show modal now");
-    signInContainer.classList.add("show-signIn-container")
+    signInContainer.classList.add("show-signIn-container");
     // hide the navigation on close
     mainNav.classList.remove("showMainNav");
  }
 
- function hideSignInModal(){
-    signInContainer.classList.remove("show-signIn-container")
+ function hideSignInModal() {
+    signInContainer.classList.remove("show-signIn-container");
     
  }
 
  signInbtn.addEventListener("click", showSignInModal);
  closeSignInModalBtn.addEventListener("click", hideSignInModal);
+
+ /* ---------------
+   Sign Up
+ ---------------- */
+ var signUpbtn = document.querySelector("#sign-up-btn");
+ var signUpContainer = document.querySelector("#sign-up-container");
+ var closeSignUpModalBtn = document.querySelector("#close-sign-up-modal-btn");
+ 
+
+ function showSignUpModal() {
+    // console.log("show modal now");
+    signUpContainer.classList.add("show-signUp-container");
+    // hide the navigation on close
+    mainNav.classList.remove("showMainNav");
+ }
+
+ function hideSignUpModal() {
+    signUpContainer.classList.remove("show-signUp-container");
+    
+ }
+
+ signUpbtn.addEventListener("click", showSignUpModal);
+ closeSignUpModalBtn.addEventListener("click", hideSignUpModal);

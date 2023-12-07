@@ -1,8 +1,8 @@
 /* =============
-    Sign In
+    Sign Up
 ============= */
 
-#sign-in-container{
+#sign-up-container{
     // background-color: var(--teal);
     background-color: #024A58B3;
     height: 100vh;
@@ -38,7 +38,7 @@
             border-radius: 8px;
         }
 
-        #sign-in-button-container{
+        #sign-up-button-container{
             display: flex;
             justify-content: flex-end;
 
@@ -46,6 +46,7 @@
                 background-color: var(--lunargreen);
                 color: var(--white);
                 border: 1px solid var(--white);
+                margin: 10px;
             }
         }
     }
