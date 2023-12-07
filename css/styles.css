@@ -335,6 +335,12 @@ template {
 /* =============
     Base
 ============= */
+.show-signIn-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 ul {
   padding: 0;
   margin: 0;
@@ -384,7 +390,7 @@ button {
 }
 
 .teal-btn:hover {
-  background-color: var(--gray);
+  background-color: var(--grayLight);
 }
 
 .white-btn {
@@ -645,9 +651,6 @@ header nav {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -655,6 +658,7 @@ header nav {
       -ms-flex-pack: center;
           justify-content: center;
   height: 100%;
+  display: none;
 }
 #sign-in-container form {
   background-color: rgba(2, 74, 88, 0.8);

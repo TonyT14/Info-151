@@ -1,13 +1,12 @@
-//alert("Hello Class!");
+/* ---------------
+  Navigation
+ ---------------- */
 
 var mainNav = document.querySelector("#mainNav");
-
 var burgerBtn = document.querySelector("#burger-container button")
-// console.log(burgerBtn);
+
 // this can only be true or false known as a boolean
 var canYouSeeMainNav = false;
-
-// var sectionTags = document.querySelectorAll(".myClass");
 
 function showNav(){
     // console.log("button clicked");
@@ -28,5 +27,26 @@ function showNav(){
 // add a event listener to the button
 burgerBtn.addEventListener("click", showNav);
 
-// will call a function wit the name of showNav
-// showNav();
+
+/* ---------------
+   Sign In
+ ---------------- */
+ var signInbtn = document.querySelector("#sign-in-btn");
+ var signInContainer = document.querySelector("#sign-in-container");
+ var closeSignInModalBtn = document.querySelector("#close-sign-in-modal-btn");
+ 
+
+ function showSignInModal() {
+    // console.log("show modal now");
+    signInContainer.classList.add("show-signIn-container")
+    // hide the navigation on close
+    mainNav.classList.remove("showMainNav");
+ }
+
+ function hideSignInModal(){
+    signInContainer.classList.remove("show-signIn-container")
+    
+ }
+
+ signInbtn.addEventListener("click", showSignInModal);
+ closeSignInModalBtn.addEventListener("click", hideSignInModal);
