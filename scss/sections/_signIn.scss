@@ -47,6 +47,11 @@
                 color: var(--white);
                 border: 1px solid var(--white);
             }
+
+            button:hover{
+                background-color: var(--gray);
+
+            }
         }
     }
 }

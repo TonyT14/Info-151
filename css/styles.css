@@ -712,6 +712,9 @@ header nav {
   color: var(--white);
   border: 1px solid var(--white);
 }
+#sign-in-container form #sign-in-button-container button:hover {
+  background-color: var(--gray);
+}
 
 /* =============
     Sign Up
@@ -771,4 +774,7 @@ header nav {
   color: var(--white);
   border: 1px solid var(--white);
   margin: 10px;
+}
+#sign-up-container form #sign-up-button-container button:hover {
+  background-color: var(--gray);
 }

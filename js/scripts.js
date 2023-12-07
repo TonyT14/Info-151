@@ -51,7 +51,6 @@ burgerBtn.addEventListener("click", showNav);
  var signInContainer = document.querySelector("#sign-in-container");
  var closeSignInModalBtn = document.querySelector("#close-sign-in-modal-btn");
  
-
  function showSignInModal() {
     // console.log("show modal now");
     signInContainer.classList.add("show-signIn-container");
@@ -61,7 +60,6 @@ burgerBtn.addEventListener("click", showNav);
 
  function hideSignInModal() {
     signInContainer.classList.remove("show-signIn-container");
-    
  }
 
  signInbtn.addEventListener("click", showSignInModal);
@@ -73,7 +71,6 @@ burgerBtn.addEventListener("click", showNav);
  var signUpbtn = document.querySelector("#sign-up-btn");
  var signUpContainer = document.querySelector("#sign-up-container");
  var closeSignUpModalBtn = document.querySelector("#close-sign-up-modal-btn");
- 
 
  function showSignUpModal() {
     // console.log("show modal now");
@@ -84,7 +81,6 @@ burgerBtn.addEventListener("click", showNav);
 
  function hideSignUpModal() {
     signUpContainer.classList.remove("show-signUp-container");
-    
  }
 
  signUpbtn.addEventListener("click", showSignUpModal);

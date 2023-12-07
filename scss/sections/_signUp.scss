@@ -48,6 +48,11 @@
                 border: 1px solid var(--white);
                 margin: 10px;
             }
+
+            button:hover{
+                background-color: var(--gray);
+
+            }
         }
     }
 }
