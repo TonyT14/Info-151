@@ -8,8 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css"/>
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 8/9 Modals</title>
+    <title>Week 10 Fancy Apps</title>
 </head>
 
 <body>
@@ -71,8 +73,38 @@
         </nav>
     </header>
 
-    <section id="hero">
+    <section id="hero"></section>
 
+    <section id="fancybox">
+        <div id="fb-grid-item">
+            <h1>Fancybox</h1>
+            <ul>
+                <li>
+                    <a href="img/fancy/fancy-1.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/fancy-1.jpg" alt="village snow mountain"></a>
+                </li>
+                <li>
+                    <a href="img/fancy/fancy-2.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/fancy-2.jpg" alt="snow mountain"></a>
+                </li>
+                <li>
+                    <a href="img/fancy/fancy-3.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/fancy-3.jpg" alt="japan mountain"></a>
+                </li>
+                <li>
+                    <a href="img/fancy/fancy-4.jpg" data-fancybox, data-fancybox="gallery-1"><img src="img/fancy/fancy-4.jpg" alt="japan cherry blossom"></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="fancyCarousel">
+        <div id="fc-grid-item">
+            <h1>Fancy Carousel</h1>
+            <div class="f-carousel" id="myCarousel">
+                <div class="f-carousel__slide"><img src="img/fancy/fancy-1.jpg" alt="village snow mountain"></div>
+                <div class="f-carousel__slide"><img src="img/fancy/fancy-2.jpg" alt="snow mountain"></div>
+                <div class="f-carousel__slide"><img src="img/fancy/fancy-3.jpg" alt="japan mountain"></div>
+                <div class="f-carousel__slide"><img src="img/fancy/fancy-4.jpg" alt="japan cherry blossom"></div>
+            </div>
+        </div>
     </section>
 
     <div id="validation-btn">
@@ -81,6 +113,9 @@
             <img src="img/html-logo.svg" alt="Valid HTML 5">
             </a>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.umd.js"></script>
 
     <script src="js/scripts-dist.js"></script>
     

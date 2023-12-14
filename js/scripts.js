@@ -1,3 +1,12 @@
+Fancybox.bind();
+
+// const container = document.getElementById("myCarousel");
+const container = document.querySelector("#myCarousel");
+
+const options = { infinite: true };
+
+new Carousel(container, options);
+
 /* ---------------
   Navigation
  ---------------- */
